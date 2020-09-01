@@ -1,0 +1,22 @@
+
+.self ul li {
+	background-repeat: no-repeat;
+	padding-left:0;
+	background-position: 0 .1em;
+	display:block;
+}
+
+.social {
+	display:none;
+}
+
+/* GO TO TOP */
+/* ----------------------------------------- */
+
+#message {
+	display:none;
+}
+
+.works {
+	display:none;
+}
