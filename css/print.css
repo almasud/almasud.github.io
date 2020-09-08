@@ -1,3 +1,22 @@
+body {
+	background-color: white;
+}
+
+.clear {
+	clear:both;
+}
+
+#wrapper, .wrapper-mid {
+	background: none;
+}
+
+.wrapper-top, .wrapper-bottom  {
+	display:none;
+}
+
+.paper-top, .paper-bottom {
+	display:none;
+}
 
 .self ul li {
 	background-repeat: no-repeat;
@@ -19,4 +38,8 @@
 
 .works {
 	display:none;
+}
+
+.print_next_page {
+	margin-top: 100px;
 }
