@@ -1,7 +1,7 @@
 {
     "name": "Augmented Learn",
-    "versionName": "1.3",
-    "versionCode": 4,
-    "versionDescription": "Changelog:\n1. Update the resources URLs\n2. Other bug fixes.",
-    "downloadURL": "https://github.com/almasud/almasud.github.io/raw/master/projects/augmented_learn/download/app/Augmented_Learn_v1.3.apk"
+    "versionName": "1.0",
+    "versionCode": 1,
+    "versionDescription": "Changelog:\n1. First and fresh version of the app.",
+    "downloadURL": "https://github.com/almasud/almasud.github.io/raw/master/projects/augmented_learn/download/app/augmented_learn_v1.0.apk"
 }
