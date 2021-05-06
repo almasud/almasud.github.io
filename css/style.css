@@ -428,6 +428,9 @@ img.portrait {
 .self ul li.web {
 	background-image:url(../images/icn-web.gif);
 }
+.self ul li.github {
+	background-image:url(../images/icn-github.png);
+}
 
 .self ul li {
 	background-repeat: no-repeat;
