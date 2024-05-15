@@ -1,263 +1,372 @@
 <!Doctype html>
 <html lng="un-us">
-	<head>
-		<meta charset="UTF-8"/>
-		<title>Augmented Learn - Learn with reality</title>
-		<style>
-			*{margin:0;padding:0;box-sizing: border-box;}
-			body{font-family: sans-serif; font-size:14px; line-height: 18px;}
-			section, nav, footer, aside{display: block;}
-			.structure{width:970px; margin:0 auto;display:block;background: #fff;}
-			.clear::after, .clear::before{clear:both;content:'';display: table;}
-			.header_section{}
-			.header{background: #009788;margin-bottom:10px;}
-			.head_left {
-				float: left;
-				width: 250px;
-			}
-			.head_left > img {
-				width: 150px;
-				height: 120px;
-				float: right;
-				margin: 20px 0;
-			}
-			.head_right {
-				float: left;
-				width: 720px;
-			}
-			.head_right > h2 {
-				font-size: 30px;
-				padding: 10px 10px 10px 0px;
-				margin: 30px 0px 0px 0px;
-				text-shadow: 2px 4px 1px #333;
-				color: #fff;
-			}
-			.head_right > p {
-				color: #ffffff;
-				font-size: 16px;
-				text-shadow: 1px 2px 1px #333333;
-				margin-top: 5px;
-			}
-			.main_section{}
-			.main {
-                background: #F1F2FE;
-				border: 5px solid #009788;
-				min-height: 500px;
-				padding: 10px;
-				margin-bottom: 10px;
-				font-size:16px;
-				line-height: 22px;
-			}
-			.main > img {
-				width: 500px;
-				height: 250px;
-                display: block;
-				margin: 10px auto;
-			}
-			.main > a {
-                display: block;
-				margin: 10px 350px;
-			}
-            .main > .app_content, .privacy_policy > p {
-				padding: 0 10px;
-                margin-bottom: 20px;
-			}
-			.footer_section{}
-			.footer {
-				background: #009788;
-				padding: 5px 0px;
-			}
-			.footer_left {
-				float: left;
-				width: 140px;
-				height: 120px;
-				position: relative;
-				overflow: hidden;
-				margin-left: 100px;
-			}
-			.footer_left > img {
-				width: 100%;
-				height: 100%;
-				float: right;
-				border: 2px solid #333333;
-				background: #ffffff;
-				padding: 5px;
-			}
-			.footer_left > .img_shadow {
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				padding: 5px;
-				background: rgba(0, 0, 0, 0.6);
-				text-align: center;
-				color: #fff;
-				top: -100%;
-				-webkit-transition: all .6s;
-				-moz-transition: all .6s;
-				-o-transition: all .6s;
-				transition: all .6s;
-			}
-			.footer_left:hover .img_shadow{top: 0;}
-			.footer_left > .img_shadow > .shadow_text {
-				margin: 50px 2px 0 2px;
-				border: 1px solid #ffffff;
-			}
-			.footer_left > .img_shadow > .shadow_text > h2 {
-				font-size: 15px;
-			}
-			.footer_left > .img_shadow > .shadow_text > h2 > a {
-				color: #ffffff;
-				text-decoration: none;
-				text-shadow: 1px 2px 1px #999;
-			}
-			.footer_left > .img_shadow > .shadow_text > p {
-				font-weight: bold;
-				font-size: 12px;
-			}
-			.footer_right {
-				float: left;
-				width: 730px;
-				padding: 51px;
-			}
-			.footer_right > p {
-				color: #fff;
-				font-size: 16px;
-				font-style: italic;
-				margin-left: 100px;
-			}
-			.footer_right > p > a {
-				color: #fff;
-				text-decoration: none;
-				text-shadow: 1px 2px 1px #333;
-			}
-			.footer_right > p > a:hover {color:#999999;}
-		</style>
-	</head>
-	<body>
-		<header class="header_section clear">
-			<div class="header structure clear">
-				<div class="head_left clear">
-					<img src="https://github.com/almasud/almasud.github.io/raw/master/projects/augmented_learn/images/app_logo.jpg" alt="Augmented Learn Logo"/>
-				</div>
-				<div class="head_right clear">
-					<h2>Augmented Learn - Learn with reality</h2>
-					<p>An educational app that helps to learn with Augmented Reality</p>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Augmented Learn - Learn with reality</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: sans-serif;
+			font-size: 14px;
+			line-height: 18px;
+		}
+
+		section,
+		nav,
+		footer,
+		aside {
+			display: block;
+		}
+
+		.structure {
+			width: 970px;
+			margin: 0 auto;
+			display: block;
+			background: #fff;
+		}
+
+		.clear::after,
+		.clear::before {
+			clear: both;
+			content: '';
+			display: table;
+		}
+
+		.header_section {}
+
+		.header {
+			background: #009788;
+			margin-bottom: 10px;
+		}
+
+		.head_left {
+			float: left;
+			width: 250px;
+		}
+
+		.head_left>img {
+			width: 150px;
+			height: 120px;
+			float: right;
+			margin: 20px 0;
+		}
+
+		.head_right {
+			float: left;
+			width: 720px;
+		}
+
+		.head_right>h2 {
+			font-size: 30px;
+			padding: 10px 10px 10px 0px;
+			margin: 30px 0px 0px 0px;
+			text-shadow: 2px 4px 1px #333;
+			color: #fff;
+		}
+
+		.head_right>p {
+			color: #ffffff;
+			font-size: 16px;
+			text-shadow: 1px 2px 1px #333333;
+			margin-top: 5px;
+		}
+
+		.main_section {}
+
+		.main {
+			background: #F1F2FE;
+			border: 5px solid #009788;
+			min-height: 500px;
+			padding: 10px;
+			margin-bottom: 10px;
+			font-size: 16px;
+			line-height: 22px;
+		}
+
+		.main>img {
+			width: 500px;
+			height: 250px;
+			display: block;
+			margin: 10px auto;
+		}
+
+		.main>a {
+			display: block;
+			margin: 10px 350px;
+		}
+
+		.main>.app_content,
+		.privacy_policy>p {
+			padding: 0 10px;
+			margin-bottom: 20px;
+		}
+
+		.footer_section {}
+
+		.footer {
+			background: #009788;
+			padding: 5px 0px;
+		}
+
+		.footer_left {
+			float: left;
+			width: 140px;
+			height: 120px;
+			position: relative;
+			overflow: hidden;
+			margin-left: 100px;
+		}
+
+		.footer_left>img {
+			width: 100%;
+			height: 100%;
+			float: right;
+			border: 2px solid #333333;
+			background: #ffffff;
+			padding: 5px;
+		}
+
+		.footer_left>.img_shadow {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			padding: 5px;
+			background: rgba(0, 0, 0, 0.6);
+			text-align: center;
+			color: #fff;
+			top: -100%;
+			-webkit-transition: all .6s;
+			-moz-transition: all .6s;
+			-o-transition: all .6s;
+			transition: all .6s;
+		}
+
+		.footer_left:hover .img_shadow {
+			top: 0;
+		}
+
+		.footer_left>.img_shadow>.shadow_text {
+			margin: 50px 2px 0 2px;
+			border: 1px solid #ffffff;
+		}
+
+		.footer_left>.img_shadow>.shadow_text>h2 {
+			font-size: 15px;
+		}
+
+		.footer_left>.img_shadow>.shadow_text>h2>a {
+			color: #ffffff;
+			text-decoration: none;
+			text-shadow: 1px 2px 1px #999;
+		}
+
+		.footer_left>.img_shadow>.shadow_text>p {
+			font-weight: bold;
+			font-size: 12px;
+		}
+
+		.footer_right {
+			float: left;
+			width: 730px;
+			padding: 51px;
+		}
+
+		.footer_right>p {
+			color: #fff;
+			font-size: 16px;
+			font-style: italic;
+			margin-left: 100px;
+		}
+
+		.footer_right>p>a {
+			color: #fff;
+			text-decoration: none;
+			text-shadow: 1px 2px 1px #333;
+		}
+
+		.footer_right>p>a:hover {
+			color: #999999;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="header_section clear">
+		<div class="header structure clear">
+			<div class="head_left clear">
+				<img src="https://github.com/almasud/almasud.github.io/raw/master/projects/augmented_learn/images/app_logo.jpg"
+					alt="Augmented Learn Logo" />
+			</div>
+			<div class="head_right clear">
+				<h2>Augmented Learn - Learn with reality</h2>
+				<p>An educational app that helps to learn with Augmented Reality</p>
+			</div>
+		</div>
+	</header>
+	<section class="main_section clear">
+		<div class="main structure clear">
+			<img src="https://github.com/almasud/almasud.github.io/raw/master/projects/augmented_learn/images/screenshots/feature_photo.jpg"
+				alt="Feature Photo" />
+			<a target="_blank"
+				href="https://github.com/almasud/almasud.github.io/raw/master/projects/augmented_learn/download/app/augmented_learn_v2.0.apk">
+				<img width="220" height="90"
+					src="https://github.com/almasud/almasud.github.io/raw/master/projects/augmented_learn/images/direct_apk_download.png"
+					alt="App download button" />
+			</a>
+			<a target="_blank" href="https://play.google.com/store/apps/details?id=com.github.almasud.augmented_learn">
+				<img width="220" height="90"
+					src="https://github.com/almasud/almasud.github.io/raw/master/projects/augmented_learn/images/google-play-badge.png"
+					alt="App download button" />
+			</a>
+			<div class="app_content">
+				<p>
+					<strong>“Augmented Learn”</strong> application is developed to provide interactive learning with
+					Augmented Reality. Our application is AR-Optional that means designed for both non-AR and AR
+					supported devices. The application serves three services: -
+				</p>
+				<p>
+					1. Learn <br>
+					2. Test and <br>
+					3. Scan book (Works only for AR supported devices).
+				</p><br>
+				<p>
+					<strong>Learn:</strong> In this section, the app introduces some basic subjects (i.e. স্বরবর্ণ,
+					ব্যঞ্জনবর্ণ, সংখ্যা, Alphabets, Numbers and Animals) by playing each item name and showing the
+					associated picture with name (If necessary) one by one by pressing a next/previous button. For every
+					item of every learn there is available an AR view button (Works only for AR supported devices) to
+					view the item in real-world by opening the camera of the device.
+				</p><br>
+				<p>
+					<strong>Test:</strong> In this section, the application gets a test from users which they have
+					already learned from the Learn section. Every Test contains a set of Test pages based on the number
+					of the Test items. Each test page holds four items to choose the correct one by playing a voice that
+					needs to choose. The examinee gets a wrong warning if the clicked item is not correct. After
+					clicking a correct one the test page proceeds to the next one. The process is continuing until the
+					rest of the items. All the wrong and correct answers are tracking to make a Test result.
+				</p><br>
+				<p>
+					<strong>Scan book:</strong> In this section, the app scans an item (s) for a particular subject from
+					a dedicated Augmented Reality based book for this app to render the 3D model of the scanned item on
+					top of it. While a user scans an item from the book the application is trying to detect the scanning
+					image. Once the image is detected then it proceeds to track the image to render a single or multiple
+					3D models for each scanned item on the top of it. Note that this feature works only for AR supported
+					devices.
+				</p><br>
+			</div>
+			<div class="privacy_policy">
+				<p><strong>Privacy Policy</strong></p>
+				<p>
+					<a target="_blank" href="https://almasud.github.io">Abdullah Al Masud</a> built the Augmented Learn
+					app as
+					a Free app. This SERVICE is provided by
+					<a target="_blank" href="https://almasud.github.io">Abdullah Al Masud</a> at no cost and is intended
+					for use as
+					is.
+				</p>
+				<p>
+					This page is used to inform visitors regarding my
+					policies with the collection, use, and disclosure of Personal
+					Information if anyone decided to use my Service.
+				</p>
+				<p>
+					If you choose to use my Service, then you agree to
+					the collection and use of information in relation to this
+					policy. The Personal Information that I collect is
+					used for providing and improving the Service. I will not use or share your information with
+					anyone except as described in this Privacy Policy.
+				</p>
+				<p>
+					The terms used in this Privacy Policy have the same meanings
+					as in our Terms and Conditions, which is accessible at
+					Augmented Learn unless otherwise defined in this Privacy Policy.
+				</p>
+				<p><strong>Information Collection and Use</strong></p>
+				<p>
+					For a better experience, while using our Service, I
+					may require you to provide us with certain personally
+					identifiable information. The information that
+					I request will be retained on your device and is not collected by me in any way.
+				</p> <!---->
+				<p>
+					This Service does not use these “cookies” explicitly. However,
+					the app may use third party code and libraries that use
+					“cookies” to collect information and improve their services.
+					You have the option to either accept or refuse these cookies
+					and know when a cookie is being sent to your device. If you
+					choose to refuse our cookies, you may not be able to use some
+					portions of this Service.
+				</p>
+				<p>
+					I value your trust in providing us your
+					Personal Information, thus we are striving to use commercially
+					acceptable means of protecting it. But remember that no method
+					of transmission over the internet, or method of electronic
+					storage is 100% secure and reliable, and I cannot
+					guarantee its absolute security.
+				</p>
+				<p><strong>Links to Other Sites</strong></p>
+				<p>
+					This Service may contain links to other sites. If you click on
+					a third-party link, you will be directed to that site. Note
+					that these external sites are not operated by me.
+					Therefore, I strongly advise you to review the
+					Privacy Policy of these websites. I have
+					no control over and assume no responsibility for the content,
+					privacy policies, or practices of any third-party sites or
+					services.
+				</p>
+				<p><strong>Children’s Privacy</strong></p>
+				<p>
+					These Services do not address anyone under the age of 13.
+					I do not knowingly collect personally
+					identifiable information from children under 13 years of age. In the case
+					I discover that a child under 13 has provided
+					me with personal information, I immediately
+					delete this from our servers. If you are a parent or guardian
+					and you are aware that your child has provided us with
+					personal information, please contact me so that
+					I will be able to do necessary actions.
+				</p>
+				<p><strong>Changes to This Privacy Policy</strong></p>
+				<p>
+					I may update our Privacy Policy from
+					time to time. Thus, you are advised to review this page
+					periodically for any changes. I will
+					notify you of any changes by posting the new Privacy Policy on
+					this page.
+				</p>
+				<p>This policy is effective as of 2021-06-13</p>
+				<p><strong>Contact Us</strong></p>
+				<p>
+					If you have any questions or suggestions about my
+					Privacy Policy, do not hesitate to contact me at <a target="_blank"
+						href="mailto:dev.almasud@gmail.com">dev.almasud@gmail.com</a>.
+			</div>
+		</div>
+	</section>
+	<footer class="footer_section clear">
+		<div class="footer structure clear">
+			<div class="footer_left clear">
+				<img src="https://github.com/almasud/almasud.github.io/raw/master/projects/augmented_learn/images/developer_image.jpg"
+					alt="Abdullah Al Masud" />
+				<div class="img_shadow clear">
+					<div class="shadow_text">
+						<h2><a target="_blank" href="https://almasud.github.io">Abdullah Al Masud</a></h2>
+						<p>Developer</p>
+					</div>
 				</div>
 			</div>
-		</header>
-		<section class="main_section clear">
-			<div class="main structure clear">
-                <img src="https://github.com/almasud/almasud.github.io/raw/master/projects/augmented_learn/images/screenshots/feature_photo.jpg" alt="Feature Photo"/>
-                <a target="_blank" href="https://github.com/almasud/almasud.github.io/raw/master/projects/augmented_learn/download/app/augmented_learn_v2.0.apk">
-                    <img width="220" height="90" src="https://github.com/almasud/almasud.github.io/raw/master/projects/augmented_learn/images/direct_apk_download.png" alt="App download button"/>
-                </a>
-                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.github.almasud.augmented_learn">
-                    <img width="220" height="90" src="https://github.com/almasud/almasud.github.io/raw/master/projects/augmented_learn/images/google-play-badge.png" alt="App download button"/>
-                </a>
-                <div class="app_content">
-                    <p>
-                        <strong>“Augmented Learn”</strong> application is developed to provide interactive learning with Augmented Reality. Our application is AR-Optional that means designed for both non-AR and AR supported devices. The application serves three services: -
-                    </p>
-                    <p>
-                        1. Learn <br>
-                        2. Test and <br>
-                        3. Scan book (Works only for AR supported devices).
-                    </p><br>
-                    <p>
-                       <strong>Learn:</strong> In this section, the app introduces some basic subjects (i.e. স্বরবর্ণ, ব্যঞ্জনবর্ণ, সংখ্যা, Alphabets, Numbers and Animals) by playing each item name and showing the associated picture with name (If necessary) one by one by pressing a next/previous button. For every item of every learn there is available an AR view button (Works only for AR supported devices) to view the item in real-world by opening the camera of the device.
-                    </p><br>
-                    <p>
-                        <strong>Test:</strong> In this section, the application gets a test from users which they have already learned from the Learn section. Every Test contains a set of Test pages based on the number of the Test items. Each test page holds four items to choose the correct one by playing a voice that needs to choose. The examinee gets a wrong warning if the clicked item is not correct. After clicking a correct one the test page proceeds to the next one. The process is continuing until the rest of the items. All the wrong and correct answers are tracking to make a Test result.
-                    </p><br>
-                    <p>
-                        <strong>Scan book:</strong> In this section, the app scans an item (s) for a particular subject from a dedicated Augmented Reality based book for this app to render the 3D model of the scanned item on top of it. While a user scans an item from the book the application is trying to detect the scanning image. Once the image is detected then it proceeds to track the image to render a single or multiple 3D models for each scanned item on the top of it. Note that this feature works only for AR supported devices.
-                    </p><br>
-				</div>
-				<div class="privacy_policy">
-					<p><strong>Privacy Policy</strong></p> <p>
-						<a target="_blank" href="https://almasud.github.io">Abdullah Al Masud</a> built the Augmented Learn app as
-						a Free app. This SERVICE is provided by
-						<a target="_blank" href="https://almasud.github.io">Abdullah Al Masud</a> at no cost and is intended for use as
-						is.
-						</p> <p>
-						This page is used to inform visitors regarding my
-						policies with the collection, use, and disclosure of Personal
-						Information if anyone decided to use my Service.
-						</p> <p>
-						If you choose to use my Service, then you agree to
-						the collection and use of information in relation to this
-						policy. The Personal Information that I collect is
-						used for providing and improving the Service. I will not use or share your information with
-						anyone except as described in this Privacy Policy.
-						</p> <p>
-						The terms used in this Privacy Policy have the same meanings
-						as in our Terms and Conditions, which is accessible at
-						Augmented Learn unless otherwise defined in this Privacy Policy.
-						</p> <p><strong>Information Collection and Use</strong></p> <p>
-						For a better experience, while using our Service, I
-						may require you to provide us with certain personally
-						identifiable information. The information that
-						I request will be retained on your device and is not collected by me in any way.
-						</p> <!----> <p>
-						This Service does not use these “cookies” explicitly. However,
-						the app may use third party code and libraries that use
-						“cookies” to collect information and improve their services.
-						You have the option to either accept or refuse these cookies
-						and know when a cookie is being sent to your device. If you
-						choose to refuse our cookies, you may not be able to use some
-						portions of this Service.
-						</p> <p>
-						I value your trust in providing us your
-						Personal Information, thus we are striving to use commercially
-						acceptable means of protecting it. But remember that no method
-						of transmission over the internet, or method of electronic
-						storage is 100% secure and reliable, and I cannot
-						guarantee its absolute security.
-						</p> <p><strong>Links to Other Sites</strong></p> <p>
-						This Service may contain links to other sites. If you click on
-						a third-party link, you will be directed to that site. Note
-						that these external sites are not operated by me.
-						Therefore, I strongly advise you to review the
-						Privacy Policy of these websites. I have
-						no control over and assume no responsibility for the content,
-						privacy policies, or practices of any third-party sites or
-						services.
-						</p> <p><strong>Children’s Privacy</strong></p> <p>
-						These Services do not address anyone under the age of 13.
-						I do not knowingly collect personally
-						identifiable information from children under 13 years of age. In the case
-						I discover that a child under 13 has provided
-						me with personal information, I immediately
-						delete this from our servers. If you are a parent or guardian
-						and you are aware that your child has provided us with
-						personal information, please contact me so that
-						I will be able to do necessary actions.
-						</p> <p><strong>Changes to This Privacy Policy</strong></p> <p>
-						I may update our Privacy Policy from
-						time to time. Thus, you are advised to review this page
-						periodically for any changes. I will
-						notify you of any changes by posting the new Privacy Policy on
-						this page.
-						</p> <p>This policy is effective as of 2021-06-13</p> <p><strong>Contact Us</strong></p> <p>
-						If you have any questions or suggestions about my
-						Privacy Policy, do not hesitate to contact me at <a target="_blank" href="mailto:dev.almasud@gmail.com">dev.almasud@gmail.com</a>.
-					</div>
-            </div>
-		</section>
-		<footer class="footer_section clear">
-			<div class="footer structure clear">
-				<div class="footer_left clear">
-					<img src="https://github.com/almasud/almasud.github.io/raw/master/projects/augmented_learn/images/developer_image.jpg" alt="Abdullah Al Masud"/>
-					<div class="img_shadow clear">
-						<div class="shadow_text">
-							<h2><a target="_blank" href="https://almasud.github.io">Abdullah Al Masud</a></h2>
-							<p>Developer</p>
-						</div>
-					</div>
-				</div>
-				<div class="footer_right clear">
-					<p>&copy; All rights reserved at <a target="_blank" href="https://almasud.github.io">Abdullah Al Masud</a></p>
-				</div>
-		</footer>
-	</body>
+			<div class="footer_right clear">
+				<p>&copy; All rights reserved at <a target="_blank" href="https://almasud.github.io">Abdullah Al
+						Masud</a></p>
+			</div>
+	</footer>
+</body>
+
 </html>
