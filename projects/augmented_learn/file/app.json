@@ -1,7 +1,7 @@
 {
     "name": "Augmented Learn",
-    "versionName": "2.0",
-    "versionCode": 2,
-    "versionDescription": "Changelogs:\n1.Support for Android 12 or above.\n2.Disable force dark mode.\n3.Remove the external app download and show the app home page link.\n4.Fix some bugs.",
-    "downloadURL": "https://github.com/almasud/almasud.github.io/raw/master/projects/augmented_learn/download/app/augmented_learn_v2.0.apk"
+    "versionName": "v2.1.1",
+    "versionCode": 4,
+    "versionDescription": "Changelogs:\n* Fixed toolbar overlap with the system status bar on Android 15 and above devices for improved layout consistency and system UI integration.",
+    "downloadURL": "https://github.com/almasud/augmented_learn/raw/refs/heads/master/app/release/app-release.apk"
 }
