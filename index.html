@@ -15,6 +15,7 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/portfolio.js" defer></script>
 </head>
 <body>
   <div class="site-shell">
@@ -126,7 +127,9 @@
               <a class="text-link" href="https://drinkwellsystems.com/" target="_blank" rel="noreferrer">Visit company site</a>
             </div>
             <div class="feature-media">
-              <img src="images/works/drink_well/02.home_screen.png" alt="DrinkWell home screen" />
+              <button class="gallery-trigger" type="button" data-gallery="drinkwell" aria-label="Open DrinkWell gallery">
+                <img src="images/works/drink_well/02.home_screen.png" alt="DrinkWell home screen" />
+              </button>
             </div>
           </article>
 
@@ -147,7 +150,9 @@
               <a class="text-link" href="https://play.google.com/store/apps/details?id=com.nybsys.sentra.sitex" target="_blank" rel="noreferrer">View project link</a>
             </div>
             <div class="feature-media">
-              <img src="images/works/sentra_ptt/08.video_call.jpg" alt="Sentra video call screen" />
+              <button class="gallery-trigger" type="button" data-gallery="sentra" aria-label="Open Sentra gallery">
+                <img src="images/works/sentra_ptt/08.video_call.jpg" alt="Sentra video call screen" />
+              </button>
             </div>
           </article>
 
@@ -168,7 +173,9 @@
               <a class="text-link" href="https://play.google.com/store/apps/details?id=com.github.almasud.xtreme_vpn" target="_blank" rel="noreferrer">View project link</a>
             </div>
             <div class="feature-media">
-              <img src="images/works/xtreme_vpn/03.connected_screen.jpg" alt="Xtreme VPN connected screen" />
+              <button class="gallery-trigger" type="button" data-gallery="xtreme-vpn" aria-label="Open Xtreme VPN gallery">
+                <img src="images/works/xtreme_vpn/03.connected_screen.jpg" alt="Xtreme VPN connected screen" />
+              </button>
             </div>
           </article>
 
@@ -188,7 +195,9 @@
               </ul>
             </div>
             <div class="feature-media">
-              <img src="images/works/till_pay/14.merchant_transactions.png" alt="TillPay merchant transactions screen" />
+              <button class="gallery-trigger" type="button" data-gallery="tillpay" aria-label="Open TillPay gallery">
+                <img src="images/works/till_pay/14.merchant_transactions.png" alt="TillPay merchant transactions screen" />
+              </button>
             </div>
           </article>
         </div>
@@ -259,7 +268,9 @@
         <ol class="archive-grid project-list">
           <li class="archive-card" style="--project-order: 1;">
             <div class="archive-media">
-              <img src="images/works/nikah_matrimony/10.match.jpg" alt="Nikah Matrimony match screen" />
+              <button class="gallery-trigger" type="button" data-gallery="nikah-matrimony" aria-label="Open Nikah Matrimony gallery">
+                <img src="images/works/nikah_matrimony/10.match.jpg" alt="Nikah Matrimony match screen" />
+              </button>
             </div>
             <div class="archive-content">
               <p class="archive-meta">Apr 2021 - Jul 2021 • Kotlin</p>
@@ -270,7 +281,9 @@
 
           <li class="archive-card" style="--project-order: 2;">
             <div class="archive-media">
-              <img src="images/works/classic_golf/02.home_screen.jpg" alt="Hokkaido Classic Golf Club home screen" />
+              <button class="gallery-trigger" type="button" data-gallery="classic-golf" aria-label="Open Hokkaido Classic Golf Club gallery">
+                <img src="images/works/classic_golf/02.home_screen.jpg" alt="Hokkaido Classic Golf Club home screen" />
+              </button>
             </div>
             <div class="archive-content">
               <p class="archive-meta">Mar 2021 - Sep 2021 • Java</p>
@@ -282,7 +295,9 @@
 
           <li class="archive-card" style="--project-order: 3;">
             <div class="archive-media">
-              <img src="images/works/keiai_order_app/02.product_screen.jpeg" alt="One-Click Order product screen" />
+              <button class="gallery-trigger" type="button" data-gallery="one-click-order" aria-label="Open One-Click Order App gallery">
+                <img src="images/works/keiai_order_app/02.product_screen.jpeg" alt="One-Click Order product screen" />
+              </button>
             </div>
             <div class="archive-content">
               <p class="archive-meta">Jan 2021 - Sep 2021 • Flutter</p>
@@ -294,7 +309,9 @@
 
           <li class="archive-card" style="--project-order: 4;">
             <div class="archive-media">
-              <img src="images/works/keiai_order_app_admin/05.product_list_screen.png" alt="One Click Order admin product list screen" />
+              <button class="gallery-trigger" type="button" data-gallery="one-click-order-admin" aria-label="Open One Click Order API and Admin gallery">
+                <img src="images/works/keiai_order_app_admin/05.product_list_screen.png" alt="One Click Order admin product list screen" />
+              </button>
             </div>
             <div class="archive-content">
               <p class="archive-meta">Oct 2020 - Sep 2021 • PHP + Laravel</p>
@@ -306,7 +323,9 @@
 
           <li class="archive-card" style="--project-order: 5;">
             <div class="archive-media">
-              <img src="images/works/augmented_learn/1.jpg" alt="Augmented Learn feature photo" />
+              <button class="gallery-trigger" type="button" data-gallery="augmented-learn" aria-label="Open Augmented Learn gallery">
+                <img src="images/works/augmented_learn/1.jpg" alt="Augmented Learn feature photo" />
+              </button>
             </div>
             <div class="archive-content">
               <p class="archive-meta">Apr 2020 - Aug 2020 • Java + ARCore</p>
@@ -339,6 +358,29 @@
         </div>
       </section>
     </main>
+  </div>
+
+  <div class="lightbox" data-lightbox hidden>
+    <div class="lightbox-backdrop" data-lightbox-close></div>
+    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close gallery">Close</button>
+      <div class="lightbox-topbar">
+        <div>
+          <p class="lightbox-label">Project Gallery</p>
+          <h2 id="lightbox-title" class="lightbox-title">Gallery</h2>
+        </div>
+        <p class="lightbox-count" data-lightbox-count>1 / 1</p>
+      </div>
+      <div class="lightbox-stage">
+        <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="Previous image">Prev</button>
+        <figure class="lightbox-figure">
+          <img data-lightbox-image src="" alt="" />
+          <figcaption data-lightbox-caption></figcaption>
+        </figure>
+        <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="Next image">Next</button>
+      </div>
+      <div class="lightbox-thumbs" data-lightbox-thumbs></div>
+    </div>
   </div>
 </body>
 </html>
