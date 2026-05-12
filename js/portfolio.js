@@ -11,6 +11,16 @@ const galleries = {
       { src: "images/works/drink_well/07.daily_report.png", alt: "DrinkWell daily report screen" }
     ]
   },
+  "cdas-app": {
+    title: "CDAS Mobile App",
+    items: [
+      { src: "images/works/cdas_app/02.1.Login_Screen.png", alt: "CDAS login screen" },
+      { src: "images/works/cdas_app/03.2.Deduction_page.png", alt: "CDAS deduction screen" },
+      { src: "images/works/cdas_app/04.Deduction_Request_Screen.png", alt: "CDAS deduction request screen" },
+      { src: "images/works/cdas_app/05.Pending_Deduction_Request_Screen.png", alt: "CDAS pending deduction request screen" },
+      { src: "images/works/cdas_app/07.1.More_Screen.png", alt: "CDAS more screen" }
+    ]
+  },
   sentra: {
     title: "Sentra Push-to-Talk",
     items: [
