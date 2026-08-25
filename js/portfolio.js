@@ -1,4 +1,26 @@
 const galleries = {
+  "cdas-app": {
+    title: "CDAS Mobile App",
+    items: [
+      { src: "images/works/cdas_app/02.1.Login_Screen.png", alt: "CDAS login screen" },
+      { src: "images/works/cdas_app/03.2.Deduction_page.png", alt: "CDAS deduction screen" },
+      { src: "images/works/cdas_app/04.Deduction_Request_Screen.png", alt: "CDAS deduction request screen" },
+      { src: "images/works/cdas_app/05.Pending_Deduction_Request_Screen.png", alt: "CDAS pending deduction request screen" },
+      { src: "images/works/cdas_app/07.1.More_Screen.png", alt: "CDAS more screen" }
+    ]
+  },
+  "money_track-app": {
+    title: "Money Track App",
+    items: [
+      { src: "images/works/money_track/screenshot-02.png", alt: "Money Track Home screen" },
+      { src: "images/works/money_track/screenshot-03.png", alt: "Money Track Transaction screen" },
+      { src: "images/works/money_track/screenshot-04.png", alt: "Money Track Investment screen" },
+      { src: "images/works/money_track/screenshot-05.png", alt: "Money Track Report screen" },
+      { src: "images/works/money_track/screenshot-06.png", alt: "Money Track Settings screen" },
+      { src: "images/works/money_track/screenshot-07.png", alt: "Money Track Data Backup screen" },
+      { src: "images/works/money_track/screenshot-01.png", alt: "Money Track App Lock screen" }
+    ]
+  },
   drinkwell: {
     title: "DrinkWell Operator Platform",
     items: [
@@ -9,16 +31,6 @@ const galleries = {
       { src: "images/works/drink_well/05.recharge.png", alt: "DrinkWell recharge screen" },
       { src: "images/works/drink_well/06.replace_card.png", alt: "DrinkWell card replace screen" },
       { src: "images/works/drink_well/07.daily_report.png", alt: "DrinkWell daily report screen" }
-    ]
-  },
-  "cdas-app": {
-    title: "CDAS Mobile App",
-    items: [
-      { src: "images/works/cdas_app/02.1.Login_Screen.png", alt: "CDAS login screen" },
-      { src: "images/works/cdas_app/03.2.Deduction_page.png", alt: "CDAS deduction screen" },
-      { src: "images/works/cdas_app/04.Deduction_Request_Screen.png", alt: "CDAS deduction request screen" },
-      { src: "images/works/cdas_app/05.Pending_Deduction_Request_Screen.png", alt: "CDAS pending deduction request screen" },
-      { src: "images/works/cdas_app/07.1.More_Screen.png", alt: "CDAS more screen" }
     ]
   },
   sentra: {
