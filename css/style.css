@@ -395,6 +395,37 @@ h3 {
   border: 1px solid var(--border);
 }
 
+.timeline-company,
+.role-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.timeline-company {
+  margin-top: -0.35rem !important;
+}
+
+.role-history {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--border);
+}
+
+.role-entry h4 {
+  margin: 0;
+  font-size: 1.08rem;
+}
+
+.role-meta {
+  margin: 0.25rem 0 0.65rem !important;
+}
+
+.role-entry ul {
+  margin-top: 0;
+}
+
 .archive-card {
   order: var(--project-order);
   display: flex;
