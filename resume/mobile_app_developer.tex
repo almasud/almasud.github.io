@@ -1,0 +1,222 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Abdullah Al Masud
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[margin=0.5in]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Abdullah Al Masud} \\ \vspace{5pt}
+    \small \textbf{Senior Mobile App Developer $|$ Android, Flutter \& KMP/CMP} \\ \vspace{5pt}
+    \small \faPhone\ 01737606053 $|$
+    \href{mailto:dev.almasud@gmail.com}{\faEnvelope\ dev.almasud@gmail.com} $|$
+    \href{https://linkedin.com/in/abdullah-almasud}{\faLinkedin\ abdullah-almasud} $|$
+    \href{https://github.com/almasud}{\faGithub\ almasud} \\
+    \small \faMapMarker\ Holding: 428, Area: Eidgah Abashik Elaka, Birampur, Dinajpur - 5266, Bangladesh
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{Senior Software Engineer with 6+ years of experience specializing in native Android, Flutter, and Kotlin Multiplatform (KMP/CMP) mobile application development. Proven expertise in building high-performance, scalable mobile applications using clean architecture principles. Skilled in REST API, MQTT, gRPC, GraphQL and WebRTC integrations, with additional experience in backend development using Laravel.}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Kotlin, Dart, Python, JavaScript, PHP, SQL, XML, HTML5, CSS3} \\
+     \textbf{Android}{: Android SDK, Jetpack Compose, Hilt, Coroutines, Flow, RxJava, Retrofit, Room Database, Google Maps} \\
+     \textbf{Flutter}{: Bloc, GetIt, GoRouter, Dio, Freezed, json\_serializable, Dart Streams, Material Design} \\
+     \textbf{KMP/CMP}{: Kotlin Coroutines \& Flow, Ktor, Koin, Kotlinx Serialization, Compose Multiplatform} \\
+     \textbf{Architecture \& Patterns}{: Clean Architecture, MVVM, MVC, Bloc Pattern, Dependency Injection} \\
+     \textbf{API \& Communication}{: REST API, MQTT, gRPC (Protocol Buffers), GraphQL, and WebRTC} \\
+     \textbf{Web \& Backend}{: Laravel, Bootstrap, HTML5, CSS3} \\
+     \textbf{Tools \& Platforms}{: Android Studio, VS Code, Xcode, Git, Postman, Jira, Firebase, Fastlane} \\
+     \textbf{Databases}{: MySQL, SQLite, Firebase Realtime Database, Cloud Firestore} \\
+     \textbf{Operating Systems}{: MacOS, Windows, Android, Ubuntu}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Software Engineer}{Sep, 2021 -- Aug, 2026}
+      {NybSys Inc.}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{Architect and develop enterprise-grade Android, Flutter, and KMP/CMP applications utilizing clean architecture and SOLID principles}
+        \resumeItem{Building a Kotlin Multiplatform (KMP/CMP) mobile app for \href{http://www.dnet.co.sz}{DataNet} — a NybSys sister company operating in Eswatini, Lesotho and South Africa — targeting Android \& iOS with shared business logic}
+        \resumeItem{Integrated REST API, MQTT (Connect to IoT devices), gRPC (Protocol Buffers), GraphQL, and WebRTC communication layers across multiple projects}
+        \resumeItem{Implemented CI/CD pipelines using Fastlane for automated app distribution to Firebase App Distribution and Google Play Store}
+        \resumeItem{Lead cross-functional Agile teams in delivering large-scale mobile projects on schedule}
+        \resumeItem{Implement modern development practices including Jetpack Compose, Hilt and Koin as dependency injection, reactive programming with Kotlin Coroutines, Flow, RxJava and Dart Streams}
+        \resumeItem{Conduct code reviews and mentor junior developers on best practices and design patterns}
+        \resumeItem{Optimize application performance resulting in improved user experience and reduced crash rates}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Mobile Application Engineer}{Sep, 2020 -- Sep, 2021}
+      {XOR Geek}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{Developed cross-platform mobile applications using Flutter and native Android frameworks}
+        \resumeItem{Built and maintained RESTful APIs and admin panels using Laravel and PHP for mobile app backends}
+        \resumeItem{Integrated third-party services including payment gateways, maps, and analytics platforms}
+        \resumeItem{Collaborated with QA teams to ensure thorough testing and bug-free releases}
+        \resumeItem{Participated in full software development lifecycle from requirement analysis to deployment}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Key Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{\href{https://play.google.com/store/apps/details?id=com.nybsys.cdas}{CDAS Employee App}} $|$ \emph{KMP/CMP $\cdot$ DataNet / NybSys}}{}
+          \resumeItemListStart
+            \resumeItem{Developing a Kotlin Multiplatform (KMP) and Compose Multiplatform (CMP) mobile application for DataNet's Central Deduction Administration System (CDAS), serving government and financial sectors across Eswatini (formerly Swaziland), Lesotho and South Africa}
+            \resumeItem{MVP features: user login, deduction (loan) request submission, loan history, application status tracking, and user profile — targeting both Android \& iOS with shared business logic and UI layer}
+            \resumeItem{\textbf{Technologies:} Kotlin, KMP, CMP, Compose Multiplatform, Coroutines, Flow, Ktor, Koin, Kotlinx Serialization, REST API, Fastlane}
+          \resumeItemListEnd
+
+    \resumeProjectHeading
+          {\textbf{\href{https://play.google.com/store/apps/details?id=com.github.almasud.money_tracker}{Money Track}} $|$ \emph{Offline \& Secure — Privacy-First Personal Finance App}}{}
+          \resumeItemListStart
+            \resumeItem{An offline-first personal finance application for tracking income, expenses, accounts, budgets, and investments without relying on cloud storage or continuous internet access.}
+            \resumeItem{\textbf{Technologies:} Dart, Flutter, Bloc, Drift, Cryptography, etc.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{\href{https://play.google.com/store/apps/details?id=com.github.almasud.xtreme_vpn}{Xtreme VPN}} $|$ \emph{Security \& Privacy Application}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a secure VPN application for Android providing encrypted internet connectivity and online privacy protection}
+            \resumeItem{\textbf{Technologies:} Java, Kotlin, REST API, OpenVPN protocol, Fastlane}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{\href{https://play.google.com/store/apps/details?id=com.nybsys.sentra.sitex}{Sentra PTT}} $|$ \emph{Voice \& Data Communication Platform}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a comprehensive push-to-talk communication application featuring AI-powered collaboration tools, real-time messaging, location sharing, and rich media capabilities for enhanced team coordination}
+            \resumeItem{\textbf{Technologies:} Android, Java, Kotlin, MQTT, gRPC( Protocol Buffers), Retrofit, Room Database, WebRTC, Fastlane}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{\href{https://www.drinkwell.com}{DrinkWell}} $|$ \emph{Clean Water Management System}}{}
+          \resumeItemListStart
+            \resumeItem{Created two Flutter-based mobile applications for managing water ATM operations and dealer-operator transactions}
+            \resumeItem{\textbf{Pump Operator App:} User registration, NFC card management, balance recharging, daily report generation}
+            \resumeItem{\textbf{Dealer App:} Fund transfers, transaction tracking, operator management, financial reporting}
+            \resumeItem{\textbf{Technologies:} Flutter, Dart, REST API, NFC tag reader, SQLite}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{\href{https://play.google.com/store/apps/details?id=hokkaido.classic.g.c}{Hokkaido Golf Club App}} $|$ \emph{Members-Only Golf Club Management}}{}
+          \resumeItemListStart
+            \resumeItem{Designed and developed an Android application for exclusive golf club member access and facility management}
+            \resumeItem{\textbf{Technologies:} Android, Java, Retrofit, Material Design}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{\href{https://play.google.com/store/apps/details?id=co.ltd.keiai.OneClickOrder}{One-Click Order}} $|$ \emph{Wholesaler's Order Management App \& \href{https://keiai-app.com/keiaiadmin}{Backend}}}{}
+          \resumeItemListStart
+            \resumeItem{Built a complete e-commerce solution including Android/iOS mobile app and a Laravel-based backend REST API with admin dashboard for authentication, product management and order processing}
+            \resumeItem{\textbf{Technologies:} Flutter, Dart, Laravel, Bootstrap, PHP, MySQL, REST API}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{\href{https://play.google.com/store/apps/details?id=com.github.almasud.augmented_learn}{Augmented Learn}} $|$ \emph{Educational AR Application}}{}
+          \resumeItemListStart
+            \resumeItem{Created an innovative educational app using augmented reality to enhance preschool learning experiences}
+            \resumeItem{\textbf{Technologies:} Java, RxJava, Retrofit, ARCore, 3D modeling (Blender), Adobe Photoshop}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dhaka International University}{Dhaka, Bangladesh}
+      {Bachelor of Science in Computer Science \& Engineering}{2015 -- 2019}
+  \resumeSubHeadingListEnd
+
+%-----------ADDITIONAL INFORMATION-----------
+\section{Additional Information}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Bengali (Native), English (Professional Working Proficiency)} \\
+     \textbf{Interests}{: Building scalable mobile products, productivity-focused UI/UX, and exploring AI-driven and cross-platform technologies}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
