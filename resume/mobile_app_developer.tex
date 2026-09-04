@@ -18,6 +18,7 @@
 \usepackage{tabularx}
 \usepackage{fontawesome5}
 \usepackage[margin=0.5in]{geometry}
+\usepackage{needspace}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -52,6 +53,20 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+% Individual role/title within a grouped company (LinkedIn-style promotion entry).
+% Same 2-row tabular pattern as \resumeSubheading (bold title/date, italic
+% secondary line) so the visual style stays consistent across the resume --
+% nested one level deeper, which the surrounding itemize indents automatically.
+% A touch of positive space (vs. the tighter -5pt elsewhere) keeps roles from
+% feeling cramped against each other.
+\newcommand{\resumeRoleHeading}[3]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.94\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textit{\small #2} \\
+      \textit{\small #3} & \\
+    \end{tabular*}\vspace{-3pt}
+}
+
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -76,7 +91,7 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge \scshape Abdullah Al Masud} \\ \vspace{5pt}
-    \small \textbf{Senior Mobile App Developer $|$ Android, Flutter \& KMP/CMP} \\ \vspace{5pt}
+    \small \textbf{Senior Mobile App Developer $|$ Android, Flutter \& KMP} \\ \vspace{5pt}
     \small \faPhone\ 01737606053 $|$
     \href{mailto:dev.almasud@gmail.com}{\faEnvelope\ dev.almasud@gmail.com} $|$
     \href{https://linkedin.com/in/abdullah-almasud}{\faLinkedin\ abdullah-almasud} $|$
@@ -86,7 +101,7 @@
 
 %-----------SUMMARY-----------
 \section{Professional Summary}
-\small{Senior Software Engineer with 6+ years of experience specializing in native Android, Flutter, and Kotlin Multiplatform (KMP/CMP) mobile application development. Proven expertise in building high-performance, scalable mobile applications using clean architecture principles. Skilled in REST API, MQTT, gRPC, GraphQL and WebRTC integrations, with additional experience in backend development using Laravel.}
+\small{Senior Software Engineer with 6+ years of experience specializing in native Android, Flutter, and Kotlin Multiplatform (KMP) mobile application development. Proven expertise in building high-performance, scalable mobile applications using clean architecture principles. Skilled in REST API, MQTT, gRPC, GraphQL and WebRTC integrations, with additional experience in backend development using Laravel.}
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
@@ -109,12 +124,24 @@
 \section{Professional Experience}
   \resumeSubHeadingListStart
 
+    % --- NybSys Pvt. Ltd.: company header, roles nested below ---
     \resumeSubheading
-      {Senior Software Engineer}{Sep, 2021 -- Aug, 2026}
-      {NybSys Inc.}{Dhaka, Bangladesh}
+      {\href{https://nybsys.com}{NybSys Pvt. Ltd.}}{Sep 2021 -- Present}{Dhaka, Bangladesh}{}
+    \vspace{2pt}
+    \resumeSubHeadingListStart
+
+      \resumeRoleHeading{Software Engineer}{Sep 2026 -- Present}{Part-time}
+      \resumeItemListStart
+        \resumeItem{Continue contributing to enterprise-grade Android, Flutter, and KMP/CMP applications on a part-time basis}
+        \resumeItem{Maintain and support the CDAS Employee App (KMP/CMP) for DataNet, addressing bug fixes and incremental feature updates}
+        \resumeItem{Provide technical guidance and mentorship to development teams}
+        \resumeItem{Review code architecture and optimize existing mobile applications}
+      \resumeItemListEnd
+
+      \resumeRoleHeading{Senior Software Engineer}{Sep 2025 -- Aug 2026}{Full-time}
       \resumeItemListStart
         \resumeItem{Architect and develop enterprise-grade Android, Flutter, and KMP/CMP applications utilizing clean architecture and SOLID principles}
-        \resumeItem{Building a Kotlin Multiplatform (KMP/CMP) mobile app for \href{http://www.dnet.co.sz}{DataNet} — a NybSys sister company operating in Eswatini, Lesotho and South Africa — targeting Android \& iOS with shared business logic}
+        \resumeItem{Building a Kotlin Multiplatform (KMP/CMP) mobile app for \href{http://www.dnet.co.sz}{DataNet} -- a NybSys sister company operating in Eswatini, Lesotho and South Africa -- targeting Android \& iOS with shared business logic}
         \resumeItem{Integrated REST API, MQTT (Connect to IoT devices), gRPC (Protocol Buffers), GraphQL, and WebRTC communication layers across multiple projects}
         \resumeItem{Implemented CI/CD pipelines using Fastlane for automated app distribution to Firebase App Distribution and Google Play Store}
         \resumeItem{Lead cross-functional Agile teams in delivering large-scale mobile projects on schedule}
@@ -123,16 +150,35 @@
         \resumeItem{Optimize application performance resulting in improved user experience and reduced crash rates}
       \resumeItemListEnd
 
+      \resumeRoleHeading{Software Engineer}{Sep 2021 -- Oct 2025}{Full-time}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained Android and Flutter applications using clean architecture principles}
+        \resumeItem{Integrated REST API and MQTT communication layers for IoT connectivity}
+        \resumeItem{Collaborated with cross-functional teams to deliver mobile solutions on schedule}
+        \resumeItem{Implemented modern development practices including Jetpack Compose and reactive programming}
+      \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+    \vspace{6pt}
+
+    % --- XOR Geek: company header, role nested below (same pattern as NybSys) ---
+    % Needspace keeps the company header from being orphaned alone at a page break
+    \Needspace*{7\baselineskip}
     \resumeSubheading
-      {Mobile Application Engineer}{Sep, 2020 -- Sep, 2021}
-      {XOR Geek}{Dhaka, Bangladesh}
+      {\href{https://xorgeek.com}{XOR Geek}}{Sep 2020 -- Sep 2021}{Dhaka, Bangladesh}{}
+    \vspace{2pt}
+    \resumeSubHeadingListStart
+
+      \resumeRoleHeading{Mobile Application Engineer}{Sep 2020 -- Sep 2021}{Full-time}
       \resumeItemListStart
         \resumeItem{Developed cross-platform mobile applications using Flutter and native Android frameworks}
         \resumeItem{Built and maintained RESTful APIs and admin panels using Laravel and PHP for mobile app backends}
         \resumeItem{Integrated third-party services including payment gateways, maps, and analytics platforms}
         \resumeItem{Collaborated with QA teams to ensure thorough testing and bug-free releases}
         \resumeItem{Participated in full software development lifecycle from requirement analysis to deployment}
-    \resumeItemListEnd
+      \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
 
   \resumeSubHeadingListEnd
 
@@ -144,12 +190,12 @@
           {\textbf{\href{https://play.google.com/store/apps/details?id=com.nybsys.cdas}{CDAS Employee App}} $|$ \emph{KMP/CMP $\cdot$ DataNet / NybSys}}{}
           \resumeItemListStart
             \resumeItem{Developing a Kotlin Multiplatform (KMP) and Compose Multiplatform (CMP) mobile application for DataNet's Central Deduction Administration System (CDAS), serving government and financial sectors across Eswatini (formerly Swaziland), Lesotho and South Africa}
-            \resumeItem{MVP features: user login, deduction (loan) request submission, loan history, application status tracking, and user profile — targeting both Android \& iOS with shared business logic and UI layer}
+            \resumeItem{MVP features: user login, deduction (loan) request submission, loan history, application status tracking, and user profile -- targeting both Android \& iOS with shared business logic and UI layer}
             \resumeItem{\textbf{Technologies:} Kotlin, KMP, CMP, Compose Multiplatform, Coroutines, Flow, Ktor, Koin, Kotlinx Serialization, REST API, Fastlane}
           \resumeItemListEnd
 
     \resumeProjectHeading
-          {\textbf{\href{https://play.google.com/store/apps/details?id=com.github.almasud.money_tracker}{Money Track}} $|$ \emph{Offline \& Secure — Privacy-First Personal Finance App}}{}
+          {\textbf{\href{https://play.google.com/store/apps/details?id=com.github.almasud.money_tracker}{Money Track}} $|$ \emph{Offline \& Secure -- Privacy-First Personal Finance App}}{}
           \resumeItemListStart
             \resumeItem{An offline-first personal finance application for tracking income, expenses, accounts, budgets, and investments without relying on cloud storage or continuous internet access.}
             \resumeItem{\textbf{Technologies:} Dart, Flutter, Bloc, Drift, Cryptography, etc.}
